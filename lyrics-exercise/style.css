@@ -1,0 +1,58 @@
+body, html{
+    height: 100%;
+    margin: 0;
+
+}
+
+.bg {
+    height: 100%;
+    opacity: 75%;
+    background-color: black;
+
+    background-image: url(https://i.scdn.co/image/ab67616d0000b2730996eb30f4f33cb772663238);
+    background-position: 100% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.row {
+    float: lefts;
+}
+
+.column{
+    text-align: center;
+    width: 50%;
+    padding: 2.5%;
+    padding-left: 10%;
+}
+
+h1 {
+    font-size: 300%;
+    margin-bottom: 0%;
+    margin-top: .5%;
+    /* padding-bottom: 0%; */
+}
+h3 {
+    font-family: fantasy;
+    margin-top: .5%;
+    padding-bottom: 3%;
+    /* font-size: smaller; */
+}
+
+h4 {
+    text-align: left;
+    padding-left: 27%;
+}
+
+p {
+    padding-left: 27%;
+    margin: .5%;
+    text-align: left;
+    font-size: smaller;
+    font-stretch:expanded;
+
+}
