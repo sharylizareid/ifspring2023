@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+#main-nav {
+    background-color: black;
+    height: 10%;
+}
+
+#main-nav ul {
+    list-style: none;
+    margin: 2% 0px;
+    padding: 0px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 5%;
+}
+
+#logo img {
+    width: 100%;
+}
+
+#main-nav ul li a {
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
+    /* font-weight:; */
+    letter-spacing: .2rem;
+}
+
+#nav-home, #nav-net, #nav-com, #nav-hard, #nav-source {
+    padding-top: 1.5%;
+}
+
+#header-img-container img {
+    width: 100%;
+    object-fit: contain;
+}
+
+#header-img-container {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+#net-banner {
+    width: 100%;
+    height: 700px;
+    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/iss068e054895_orig.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+#net-title {
+    width: 30%;
+    margin: 0;
+    color: white;
+    font-size: 4rem;
+    letter-spacing: .3rem;
+    padding: 10% 0px 0px 5%;
+}
+
+/* #net-banner:before {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+} */
+
+#net-learn {
+    width: 10%;
+    text-align: center;
+    margin: 12% 0px 0px 85%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    border: 3px solid white;
+    padding: .2rem;
+    border-radius: 30px;
+    /* padding: 10% 0px 0px 5%; */
+}
+
+
+#com-banner {
+    width: 100%;
+    height: 700px;
+    background-image: url(https://www.thestatesman.com/wp-content/uploads/2017/08/1491978973-iss.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
