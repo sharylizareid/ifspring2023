@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styling/styles.css">
+    <link rel="stylesheet" href="styling/hardware.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <script src="hardware.js"></script>
+    <title>Spacecraft Communications - Home</title>
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <ul>
+                <li id="logo"><a href="index.html"><img src="images/satellite-logo.png" alt="logo of white satallite outline"></a></li>
+                <!-- <li id="nav-home"><a href="index.html">Home</a></li> -->
+                <li id="nav-net"><a href="network.html">Network</a></li>
+                <li id="nav-com"><a href="communications.html">Communications</a></li>
+                <li id="nav-hard"><a href="hardware.html">Hardware</a></li>
+                <li id="nav-source"><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+        <div id="header-img-container">
+            <p id="hard-title">Hardware</p> 
+            <!-- <img id="header-img" src="https://www.ralspace.stfc.ac.uk/Gallery/12mantenna_at_dusk.jpg" alt=""> -->
+        </div>
+        <content>
+            <div id="sub-nav" class="row">
+                <div class="col" id="hard-sub-1" onclick="subAntenna()">
+                    <p>Antennas</p>
+                    <!-- <button onclick="subAntenna"></button> -->
+                </div>
+                <div class="col" id="hard-sub-2">
+                    Amplifiers
+                </div>
+                <div class="col" id="hard-sub-3">
+                    Space-grading Hardware
+                </div>
+            </div>
+            <div id="antenna-content">
+                <p>
+                    An antenna is an array of conductors (elements), <img id="p-img-1" src="https://www.ralspace.stfc.ac.uk/Gallery/12mantenna_at_dusk.jpg" alt=""> 
+                    electrically connected to the receiver or transmitter. Antennas can be designed to transmit and receive radio waves in all horizontal directions 
+                    equally (omnidirectional antennas), or preferentially in a particular direction (directional, or high-gain, or “beam” antennas). An antenna may 
+                    include components not connected to the transmitter, parabolic reflectors, horns, or parasitic elements, which serve to direct the radio waves 
+                    into a beam or other desired radiation pattern. Strong directivity and good efficiency when transmitting are hard to achieve with antennas with 
+                    dimensions that are much smaller than a half wavelength.
+                </p>
+                <p>
+                    In radio engineering, an antenna or aerial is the interface between radio waves propagating through space and electric currents moving in metal 
+                    conductors, used with a transmitter or receiver. In transmission, a radio transmitter supplies an electric current to the antenna's terminals, 
+                    and the antenna radiates the energy from the current as electromagnetic waves (radio waves). In reception, an antenna intercepts some of the power 
+                    of a radio wave in order to produce an electric current at its terminals, that is applied to a receiver to be amplified. Antennas are essential 
+                    components of all radio equipment.
+                </p>
+                <h1>Antenna Gain</h1>
+                <p>
+                    In electromagnetics, an antenna's gain is a key performance parameter which combines the antenna’s directivity and radiation efficiency. The term 
+                    power gain has been deprecated by IEEE. In a transmitting antenna, the gain describes how well the antenna converts input power into radio waves 
+                    headed in a specified direction. In a receiving antenna, the gain describes how well the antenna converts radio waves arriving from a specified 
+                    direction into electrical power. When no direction is specified, gain is understood to refer to the peak value of the gain, the gain in the direction 
+                    of the antenna's main lobe. A plot of the gain as a function of direction is called the antenna pattern or radiation pattern. It is not to be confused 
+                    with directivity, which does not take an antenna's radiation efficiency into account.
+                </p>
+                <div id="diagram-container">
+                    <div id="gain-img-container">
+                        <img id="gain-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Antenna_directive_gain_diagram.svg/1200px-Antenna_directive_gain_diagram.svg.png" alt="">
+                    </div>
+                    <div id="gain-img-text-container">
+                            <p>
+                                Gain or 'absolute gain' is defined as "The ratio of the radiation intensity in a given direction to the radiation intensity that would 
+                                be produced if the power accepted by the antenna were isotropically radiated". Usually this ratio is expressed in decibels with respect 
+                                to an isotropic radiator (dBi). An alternative definition compares the received power to the power received by a lossless half-wave dipole 
+                                antenna, in which case the units are written as dBd.
+                            </p>
+                    </div>
+                </div>
+                <p>
+                    Since a lossless dipole antenna has a gain of 2.15 dBi, the relation between these units is Gain(dBd) ≈ Gain(dBi) - 2.15. For a given frequency, 
+                    the antenna's effective area is proportional to the gain. An antenna's effective length is proportional to the square root of the antenna's gain 
+                    for a particular frequency and radiation resistance. Due to reciprocity, the gain of any antenna when receiving is equal to its gain when transmitting.
+                </p>
+                <h1>High Gain</h1>
+                <p>
+                    High-gain antennas are focused antennas with narrow radio beams, allowing for precise targeting of radio signals. This antenna is used in space missions as well as in flat, open areas where the geography won’t disrupt radio waves.
+                </p>
+                <p>
+                    High-gain antennas transmit more power to the receiver, increasing the strength of the signal it receives. As a result of their reciprocity, high-gain antennas can also make transmitted signals 100 times stronger by capturing more energy when used in receiving antenna. As a result of their directivity, directional antennas send fewer signals from a direction other than the main beam. This property reduces interference.
+                </p>
+                <p>
+                    High-gain antennas can also be produced from parabolic antennas, phased arrays and yagi antennas. Antenna gains are defined with respect to hypothetical antennas that radiate equally in all directions – the isotropic radiator. This gain can be measured in decibels (dBi) or, in certain cases, decibels compared to the maximum intensity of the direction of half-wave dipoles (dBd).
+                </p>
+                <h1>Low Gain</h1>
+                <p>
+                    A small spacecraft antenna that provides a low amplification of radio frequency signals. An LGA is capable of transmitting and receiving in almost any direction, and does not require highly accurate pointing. Sometimes an LGA is mounted above the spacecraft's high-gain antenna (HGA), as on Galileo and Cassini. LGAs can be used with space probes to the nearer planets, as with Magellan investigating Venus, but probes traveling further, such as the Voyager probes, must use high-gain antennae.
+                </p>
+            </div>
+        </content>
+    </header>
+</body>
