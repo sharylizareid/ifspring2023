@@ -96,25 +96,29 @@ content {
     margin: 7% 0px 4% 0px;
 }
 
+#first-p {
+    width: 100%;
+}
+
 #p-img-1 {
     float: right;
-    width: 600px;
-    height: 400px;
+    width: 65%;
+    height: 350px;
     object-fit: cover;
-    margin: 0px 0px 4% 4%;
+    margin: 0px 0px 1% 2%;
 }
 
 #diagram-container {
-    /* height: 400px; */
+    height: 300px;
     align-items: center;
 }
 
 #gain-img-container {
     float: left;
     background-color: rgb(222, 205, 212);
-    width: 48%;
+    width: 49%;
     height: 100%;
-    margin-right: 2%;    
+    margin: 0px 3% 2% 0px;    
 }
 
 #gain-img {
@@ -124,14 +128,22 @@ content {
 
 #gain-img-text-container {
     /* background-color: rgb(48, 68, 98); */
-    float: right;
+    /* float: right;
     width: 48%;
     height: 100%;
     margin-right: 0px;
-    margin-left: 2%;
+    margin-left: 2%; */
 }
 
- #gain-img-text-container p {
-    width: 88%;
-    padding: 5% 6%;
+ #gain-img-text-container {
+    /* float: right; */
+    width: 100%;
+    margin: 0px;
+    /* font-size: 1.1rem; */
+    /* padding: 5% 6%; */
 } 
+
+#post-image-p {
+    clear: both;
+    margin-top: 4%;
+}

@@ -42,14 +42,16 @@
                 </div>
             </div>
             <div id="antenna-content">
-                <p>
-                    An antenna is an array of conductors (elements), <img id="p-img-1" src="https://www.ralspace.stfc.ac.uk/Gallery/12mantenna_at_dusk.jpg" alt=""> 
+                <img id="p-img-1" src="https://www.ralspace.stfc.ac.uk/Gallery/12mantenna_at_dusk.jpg" alt="">
+                <p id="first-p">
+                    An antenna is an array of conductors (elements),  
                     electrically connected to the receiver or transmitter. Antennas can be designed to transmit and receive radio waves in all horizontal directions 
                     equally (omnidirectional antennas), or preferentially in a particular direction (directional, or high-gain, or “beam” antennas). An antenna may 
                     include components not connected to the transmitter, parabolic reflectors, horns, or parasitic elements, which serve to direct the radio waves 
                     into a beam or other desired radiation pattern. Strong directivity and good efficiency when transmitting are hard to achieve with antennas with 
                     dimensions that are much smaller than a half wavelength.
                 </p>
+                
                 <p>
                     In radio engineering, an antenna or aerial is the interface between radio waves propagating through space and electric currents moving in metal 
                     conductors, used with a transmitter or receiver. In transmission, a radio transmitter supplies an electric current to the antenna's terminals, 
@@ -66,20 +68,16 @@
                     of the antenna's main lobe. A plot of the gain as a function of direction is called the antenna pattern or radiation pattern. It is not to be confused 
                     with directivity, which does not take an antenna's radiation efficiency into account.
                 </p>
-                <div id="diagram-container">
-                    <div id="gain-img-container">
-                        <img id="gain-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Antenna_directive_gain_diagram.svg/1200px-Antenna_directive_gain_diagram.svg.png" alt="">
-                    </div>
-                    <div id="gain-img-text-container">
-                            <p>
-                                Gain or 'absolute gain' is defined as "The ratio of the radiation intensity in a given direction to the radiation intensity that would 
-                                be produced if the power accepted by the antenna were isotropically radiated". Usually this ratio is expressed in decibels with respect 
-                                to an isotropic radiator (dBi). An alternative definition compares the received power to the power received by a lossless half-wave dipole 
-                                antenna, in which case the units are written as dBd.
-                            </p>
-                    </div>
+                <div id="gain-img-container">
+                    <img id="gain-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Antenna_directive_gain_diagram.svg/1200px-Antenna_directive_gain_diagram.svg.png" alt="">
                 </div>
-                <p>
+                <p id="gain-img-text-container">
+                    Gain or 'absolute gain' is defined as "The ratio of the radiation intensity in a given direction to the radiation intensity that would 
+                    be produced if the power accepted by the antenna were isotropically radiated". Usually this ratio is expressed in decibels with respect 
+                    to an isotropic radiator (dBi). An alternative definition compares the received power to the power received by a lossless half-wave dipole 
+                    antenna, in which case the units are written as dBd.
+                </p>
+                <p id="post-image-p">
                     Since a lossless dipole antenna has a gain of 2.15 dBi, the relation between these units is Gain(dBd) ≈ Gain(dBi) - 2.15. For a given frequency, 
                     the antenna's effective area is proportional to the gain. An antenna's effective length is proportional to the square root of the antenna's gain 
                     for a particular frequency and radiation resistance. Due to reciprocity, the gain of any antenna when receiving is equal to its gain when transmitting.

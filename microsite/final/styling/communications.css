@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #000000 12%, #8F4948 100%);
+    background: linear-gradient(to bottom, black 12%, #161c1e 100%);
     font-family: 'Archivo Narrow', sans-serif;
     color: white;
     height: 20000px;
@@ -30,6 +30,29 @@ html, body {
     font-size: 4rem;
     font-weight: 600;
     letter-spacing: .3rem;
-    padding: 2% 10% 0px 10%;
+    padding: 3% 10% 0px 10%;
+    text-shadow: 1px 1px black 10px;
     text-align: center;
+}
+
+#communication-content {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    letter-spacing: .2rem;
+    text-align: justify;
+    align-items: center;
+    width: 80%;
+    margin: 4% 10% 0px 10%
+}
+
+#communication-content p {
+    margin-bottom: 4%;
+}
+
+#communication-content p strong {
+   font-size: 1.4rem;
+}
+
+#communication-content h1 {
+    margin: 7% 0px 4% 0px;
 }
