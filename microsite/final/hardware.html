@@ -9,7 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="hardware.js"></script>
+    <script>
+        let hardSubNavColor = "rgba(48, 68, 98, 1)"
+        let hardSubNavColorClear = "rgba(48, 68, 98, 0)"
+
+        function subAntenna() {
+            document.getElementById("hard-sub-1").style.backgroundColor = hardSubNavColor;
+            document.getElementById("hard-sub-2").style.backgroundColor = hardSubNavColorClear;
+            document.getElementById("amplifier-content").style.display = "none";
+            document.getElementById("antenna-content").style.display = "block";
+        };
+
+        function subAmplifier() {
+            document.getElementById("hard-sub-2").style.backgroundColor = hardSubNavColor;
+            document.getElementById("hard-sub-1").style.backgroundColor = hardSubNavColorClear;
+            document.getElementById("antenna-content").style.display = "none";
+            document.getElementById("amplifier-content").style.display = "block";
+        }
+    </script>
     <title>Spacecraft Communications - Home</title>
 </head>
 <body>
@@ -30,19 +47,15 @@
         </div>
         <content>
             <div id="sub-nav" class="row">
-                <div class="col" id="hard-sub-1" onclick="subAntenna()">
-                    <p>Antennas</p>
-                    <!-- <button onclick="subAntenna"></button> -->
+                <div class="col" id="hard-sub-1">
+                    <p onclick="subAntenna()">Antennas</p>
+                    
                 </div>
-                <div class="col" id="hard-sub-2">
-                    Amplifiers
-                </div>
-                <div class="col" id="hard-sub-3">
-                    Space-grading Hardware
+                <div class="col" id="hard-sub-2" onclick="subAmplifier()">
+                    <p onclick="subAmplifier()">Amplifiers</p>
                 </div>
             </div>
             <div id="antenna-content">
-                <img id="p-img-1" src="https://www.ralspace.stfc.ac.uk/Gallery/12mantenna_at_dusk.jpg" alt="">
                 <p id="first-p">
                     An antenna is an array of conductors (elements),  
                     electrically connected to the receiver or transmitter. Antennas can be designed to transmit and receive radio waves in all horizontal directions 
@@ -51,8 +64,9 @@
                     into a beam or other desired radiation pattern. Strong directivity and good efficiency when transmitting are hard to achieve with antennas with 
                     dimensions that are much smaller than a half wavelength.
                 </p>
-                
-                <p>
+                <img id="p-img-1" src="https://www.nasa.gov/sites/default/files/thumbnails/image/dsn20200304.jpg" alt="">
+
+                <p id="p2">
                     In radio engineering, an antenna or aerial is the interface between radio waves propagating through space and electric currents moving in metal 
                     conductors, used with a transmitter or receiver. In transmission, a radio transmitter supplies an electric current to the antenna's terminals, 
                     and the antenna radiates the energy from the current as electromagnetic waves (radio waves). In reception, an antenna intercepts some of the power 
@@ -84,18 +98,57 @@
                 </p>
                 <h1>High Gain</h1>
                 <p>
-                    High-gain antennas are focused antennas with narrow radio beams, allowing for precise targeting of radio signals. This antenna is used in space missions as well as in flat, open areas where the geography won’t disrupt radio waves.
+                    High-gain antennas are focused antennas with narrow radio beams, allowing for precise targeting of radio signals. This antenna is used in 
+                    space missions as well as in flat, open areas where the geography won’t disrupt radio waves.
                 </p>
                 <p>
-                    High-gain antennas transmit more power to the receiver, increasing the strength of the signal it receives. As a result of their reciprocity, high-gain antennas can also make transmitted signals 100 times stronger by capturing more energy when used in receiving antenna. As a result of their directivity, directional antennas send fewer signals from a direction other than the main beam. This property reduces interference.
+                    High-gain antennas transmit more power to the receiver, increasing the strength of the signal it receives. As a result of their reciprocity, 
+                    high-gain antennas can also make transmitted signals 100 times stronger by capturing more energy when used in receiving antenna. As a result 
+                    of their directivity, directional antennas send fewer signals from a direction other than the main beam. This property reduces interference.
                 </p>
                 <p>
-                    High-gain antennas can also be produced from parabolic antennas, phased arrays and yagi antennas. Antenna gains are defined with respect to hypothetical antennas that radiate equally in all directions – the isotropic radiator. This gain can be measured in decibels (dBi) or, in certain cases, decibels compared to the maximum intensity of the direction of half-wave dipoles (dBd).
+                    High-gain antennas can also be produced from parabolic antennas, phased arrays and yagi antennas. Antenna gains are defined with respect to 
+                    hypothetical antennas that radiate equally in all directions – the isotropic radiator. This gain can be measured in decibels (dBi) or, in 
+                    certain cases, decibels compared to the maximum intensity of the direction of half-wave dipoles (dBd).
                 </p>
                 <h1>Low Gain</h1>
                 <p>
-                    A small spacecraft antenna that provides a low amplification of radio frequency signals. An LGA is capable of transmitting and receiving in almost any direction, and does not require highly accurate pointing. Sometimes an LGA is mounted above the spacecraft's high-gain antenna (HGA), as on Galileo and Cassini. LGAs can be used with space probes to the nearer planets, as with Magellan investigating Venus, but probes traveling further, such as the Voyager probes, must use high-gain antennae.
+                    A small spacecraft antenna that provides a low amplification of radio frequency signals. An LGA is capable of transmitting and receiving 
+                    in almost any direction, and does not require highly accurate pointing. Sometimes an LGA is mounted above the spacecraft's high-gain antenna 
+                    (HGA), as on Galileo and Cassini. LGAs can be used with space probes to the nearer planets, as with Magellan investigating Venus, but probes 
+                    traveling further, such as the Voyager probes, must use high-gain antennae.
                 </p>
+            </div>
+            <div id="amplifier-content">
+                <p>
+                    An amplifier, electronic amplifier or (informally) amp is an electronic device that can increase the magnitude of a signal (a time-varying 
+                    voltage or current). A power amplifier is similarly used to deliver output power (AF or RF), controlled by an input signal. It is a two-port 
+                    electronic circuit that uses electric power from a power supply to increase the amplitude (magnitude of the voltage or current) of a signal 
+                    applied to its input terminals, producing a proportionally greater amplitude signal at its output. The amount of amplification provided by 
+                    an amplifier is measured by its gain: the ratio of output voltage, current, or power to input. An amplifier is a circuit that has a power 
+                    gain greater than one.
+                </p>
+                <p>
+                    An amplifier can either be a separate piece of equipment or an electrical circuit contained within another device. Amplification is 
+                    fundamental to modern electronics, and amplifiers are widely used in almost all electronic equipment. Amplifiers can be categorized in 
+                    different ways. One is by the frequency of the electronic signal being amplified. For example, audio amplifiers amplify signals in the 
+                    audio (sound) range of less than 20 kHz, RF amplifiers amplify frequencies in the radio frequency range between 20 kHz and 300 GHz, and 
+                    servo amplifiers and instrumentation amplifiers may work with very low frequencies down to direct current. Amplifiers can also be 
+                    categorized by their physical placement in the signal chain; a preamplifier may precede other signal processing stages, for example. 
+                    The first practical electrical device which could amplify was the triode vacuum tube, invented in 1906 by Lee De Forest, which led to 
+                    the first amplifiers around 1912. Today most amplifiers use transistors.
+                </p>
+                <div id="amp-img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Amplification2.svg/440px-Amplification2.svg.png" alt="">
+                </div>
+                <p>
+                    Amplification means increasing the amplitude (voltage or current) of a time-varying signal by a given factor, as shown here. The graph 
+                    shows the input v_i(t) (blue) and output voltage v_o(t) (red) of an ideal linear amplifier with an arbitrary signal applied as input. 
+                    In this example the amplifier has a voltage gain of 3; that is at any instant v_o(t) = 3v_i(t).
+                </p>
+            </div>
+            <div id="footer">
+                <p>© Copyright 2023. All rights reserved.</p>
             </div>
         </content>
     </header>

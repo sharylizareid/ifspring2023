@@ -1,58 +1,157 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, black 12%, #161c1e 100%);
-    font-family: 'Archivo Narrow', sans-serif;
-    color: white;
-    height: 20000px;
+/* DESKTOP/TABLET SIZE */
+@media (min-width: 850px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, black 12%, #161c1e 100%);
+        font-family: 'Archivo Narrow', sans-serif;
+        color: white;
+    }
+
+    #main-nav {
+        background-color: #000000;
+        height: 10%;
+    }
+
+    #header-img-container {
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        background-image: url(https://www.thestatesman.com/wp-content/uploads/2017/08/1491978973-iss.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #com-title {
+        z-index: 1200;
+        width: 80%;
+        margin: 0;
+        color: white;
+        font-size: 4rem;
+        font-weight: 600;
+        letter-spacing: .3rem;
+        padding: 4% 10% 0px 10%;
+        text-shadow: 1px 1px black 10px;
+        text-align: center;
+        text-indent: 0px;
+    }
+
+    #communication-content {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        letter-spacing: .2rem;
+        text-align: justify;
+        align-items: center;
+        width: 80%;
+        margin: 4% 10% 0px 10%
+    }
+
+    #communication-content p {
+        margin-bottom: 4%;
+    }
+
+    #communication-content h3 {
+        font-size: 1.6rem;
+        margin-bottom: .5%;
+    }
+
+    #communication-content h1 {
+        margin: 7% 0px 6% 0px;
+        text-indent: 0px;
+    }
+
+    #footer {
+        height: 5rem;
+        border-top: white 2px solid;
+    }
+
+    #footer p {
+        text-align: right;
+        margin: 0px;
+        color: white;
+        padding: 2% 5% 0px 0px;
+    }
 }
 
-#main-nav {
-    background-color: #000000;
-    height: 10%;
-}
 
-#header-img-container {
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
-    background-image: url(https://www.thestatesman.com/wp-content/uploads/2017/08/1491978973-iss.jpg);
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-#hard-title {
-    z-index: 1200;
-    width: 80%;
-    margin: 0;
-    color: white;
-    font-size: 4rem;
-    font-weight: 600;
-    letter-spacing: .3rem;
-    padding: 3% 10% 0px 10%;
-    text-shadow: 1px 1px black 10px;
-    text-align: center;
-}
 
-#communication-content {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    letter-spacing: .2rem;
-    text-align: justify;
-    align-items: center;
-    width: 80%;
-    margin: 4% 10% 0px 10%
-}
+/* -------------------------------------------------------------------------------------------- */
 
-#communication-content p {
-    margin-bottom: 4%;
-}
+/* PHONE SIZE */
+@media (max-width: 850px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom, black 12%, #161c1e 100%);
+        font-family: 'Archivo Narrow', sans-serif;
+        color: white;
+    }
 
-#communication-content p strong {
-   font-size: 1.4rem;
-}
+    #main-nav {
+        background-color: #000000;
+        height: 10%;
+    }
 
-#communication-content h1 {
-    margin: 7% 0px 4% 0px;
+    #header-img-container {
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        background-image: url(https://www.thestatesman.com/wp-content/uploads/2017/08/1491978973-iss.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #com-title {
+        z-index: 1200;
+        width: 70%;
+        margin: 0;
+        color: white;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: .3rem;
+        padding: 10% 15% 0px 15%;
+        text-shadow: 1px 1px black 10px;
+        text-align: center;
+        text-indent: 0px;
+    }
+
+    #communication-content {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        letter-spacing: .2rem;
+        text-align: justify;
+        align-items: center;
+        width: 80%;
+        margin: 4% 10% 0px 10%
+    }
+
+    #communication-content p {
+        margin-bottom: 4%;
+    }
+
+    #communication-content h3 {
+        font-size: 1.3rem;
+        margin-bottom: .5%;
+    }
+
+    #communication-content h1 {
+        margin: 7% 0px 6% 0px;
+        text-indent: 0px;
+        font-size: 1.6rem;
+    }
+
+    #footer {
+        height: 5rem;
+        border-top: white 2px solid;
+    }
+
+    #footer p {
+        text-align: right;
+        margin: 0px;
+        color: white;
+        padding: 2% 5% 0px 0px;
+    }
 }

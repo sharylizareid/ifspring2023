@@ -1,79 +1,199 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    /* background-color: black; */
-    background: linear-gradient(to bottom, black 12%, #2d2d2d 100%);
-    font-family: 'Archivo Narrow', sans-serif;
-    color: white;
+/* DESKTOP/TABLET SIZE */
+@media (min-width: 850px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        /* background-color: black; */
+        background: linear-gradient(to bottom, black 12%, #2d2d2d 100%);
+        font-family: 'Archivo Narrow', sans-serif;
+        color: white;
+    }
+    
+    #main-nav {
+        background-color: black;
+        height: 10%;
+    }
+    
+    #header-img-container {
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/iss068e054895_orig.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #net-title {
+        z-index: 1200;
+        width: 40%;
+        margin: 0;
+        color: white;
+        text-align: left;
+        font-size: 4rem;
+        font-weight: 600;
+        letter-spacing: .3rem;
+        padding: 25% 0px 0px 10%;
+        text-indent: 0px;
+        text-align: left;
+    }
+    
+    #network-content {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        letter-spacing: .2rem;
+        text-align: justify;
+        align-items: center;
+        width: 80%;
+        margin: 4% 10% 0px 10%
+    }
+    
+    #network-content p {
+        margin-bottom: 4%;
+    }
+    
+    #network-content h1 {
+        margin: 7% 0px 4% 0px;
+        text-indent: 0px;
+    }
+    
+    #equation {
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    
+    em {
+        text-decoration: underline;
+    }
+    
+    #byte-diagram {
+        background-color: rgb(255, 255, 255);
+        width: 40%;
+        text-align: center;
+        margin: 0px 30% 4% 30%;
+    }
+    
+    #byte-diagram img {
+        width: 100%;
+    }
+    
+    #wireless-img {
+        /* float: left; */
+        margin: 0px 25% 1% 25%;
+        width: 50%;
+    }
+    
+    #footer {
+        height: 5rem;
+        border-top: white 2px solid;
+    }
+    
+    #footer p {
+        text-align: right;
+        margin: 0px;
+        color: white;
+        padding: 2% 5% 0px 0px;
+    }
 }
 
-#main-nav {
-    background-color: black;
-    height: 10%;
-}
 
-#header-img-container {
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
-    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/iss068e054895_orig.jpg);
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-#hard-title {
-    z-index: 1200;
-    width: 40%;
-    margin: 0;
-    color: white;
-    text-align: left;
-    font-size: 4rem;
-    font-weight: 600;
-    letter-spacing: .3rem;
-    padding: 20% 55% 0px 5%;
-}
 
-#network-content {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    letter-spacing: .2rem;
-    text-align: justify;
-    align-items: center;
-    width: 80%;
-    margin: 4% 10% 0px 10%
-}
-
-#network-content p {
-    margin-bottom: 4%;
-}
-
-#network-content h1 {
-    margin: 7% 0px 4% 0px;
-}
-
-#equation {
-    text-align: center;
-    font-size: 1.7rem;
-}
-
-em {
-    text-decoration: underline;
-}
-
-#byte-diagram {
-    background-color: rgb(255, 255, 255);
-    width: 40%;
-    text-align: center;
-    margin: 0px 30% 4% 30%;
-}
-
-#byte-diagram img {
-    width: 100%;
-}
-
-#wireless-img {
-    float: left;
-    margin: 0px 2% 1% 0px;
-    width: 50%;
+/* -------------------------------------------------------------------------------------------- */
+/* PHONE SIZE */
+@media (max-width: 850px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        /* background-color: black; */
+        background: linear-gradient(to bottom, black 12%, #2d2d2d 100%);
+        font-family: 'Archivo Narrow', sans-serif;
+        color: white;
+    }
+    
+    #main-nav {
+        background-color: black;
+        height: 10%;
+    }
+    
+    #header-img-container {
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/iss068e054895_orig.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    #net-title {
+        z-index: 1200;
+        width: 60%;
+        margin: 0;
+        color: white;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: .3rem;
+        padding: 20% 20% 0px 20%;
+        text-indent: 0px;
+        text-align: center;
+    }
+    
+    #network-content {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        letter-spacing: .2rem;
+        text-align: justify;
+        align-items: center;
+        width: 80%;
+        margin: 4% 10% 0px 10%
+    }
+    
+    #network-content p {
+        margin-bottom: 4%;
+    }
+    
+    #network-content h1 {
+        margin: 7% 0px 4% 0px;
+        text-indent: 0px;
+        font-size: 1.6rem;
+    }
+    
+    #equation {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    
+    em {
+        text-decoration: underline;
+    }
+    
+    #byte-diagram {
+        background-color: rgb(255, 255, 255);
+        width: 40%;
+        text-align: center;
+        margin: 0px 30% 4% 30%;
+    }
+    
+    #byte-diagram img {
+        width: 100%;
+    }
+    
+    #wireless-img {
+        /* float: left; */
+        margin: 0px 25% 1% 25%;
+        width: 50%;
+    }
+    
+    #footer {
+        height: 5rem;
+        border-top: white 2px solid;
+    }
+    
+    #footer p {
+        text-align: right;
+        margin: 0px;
+        color: white;
+        padding: 2% 5% 0px 0px;
+    }
 }
