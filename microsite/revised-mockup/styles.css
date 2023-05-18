@@ -1,0 +1,30 @@
+html {
+    margin: 5%;
+}
+h1 {
+    margin-bottom: 8%;
+}
+
+h3 {
+    clear: both;
+}
+
+div {
+    height: 450px;
+    margin-bottom: 8%;
+}
+
+img {
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+}
+
+p {
+    float: left;
+    width: 30%;
+    font-size: 1.5rem;
+    border-left: 2px solid black;
+    padding-left: 15px;
+    margin-left: 0;
+}

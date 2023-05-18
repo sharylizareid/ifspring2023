@@ -1,0 +1,123 @@
+/* DESKTOP/TABLET SIZE */
+@media (min-width: 850px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: rgb(101, 104, 119);
+        font-family: 'Archivo Narrow', sans-serif;
+        color: white;
+    }
+
+    #main-nav {
+        background-color: rgb(101, 104, 119);
+        height: 10%;
+    }
+
+    #content {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        letter-spacing: .2rem;
+        text-align: justify;
+        align-items: center;
+        width: 80%;
+        margin: 4% 3% 0px 3%;
+        word-wrap: break-word;
+    }
+
+    #content p {
+        margin-bottom: 6%;
+    }
+
+    #content h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1%;
+    }
+
+    #content h1 {
+        margin: 7% 0px 4% 0px;
+    }
+
+    #content ul {
+        margin-bottom: 6%;
+    }
+
+    #content ul li {
+        margin-bottom: 3%;
+    }
+
+    #footer {
+        height: 5rem;
+        border-top: white 2px solid;
+    }
+
+    #footer p {
+        text-align: right;
+        margin: 0px;
+        color: white;
+        padding: 2% 5% 0px 0px;
+    }
+}
+
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* PHONE SIZE */
+@media (max-width: 850px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        background: rgb(101, 104, 119);
+        font-family: 'Archivo Narrow', sans-serif;
+        color: white;
+    }
+
+    #main-nav {
+        background-color: rgb(101, 104, 119);
+        height: 10%;
+    }
+
+    #content {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        letter-spacing: .2rem;
+        text-align: justify;
+        align-items: center;
+        width: 80%;
+        margin: 4% 10% 0px 10%;
+        word-wrap: break-word;
+    }
+
+    #content p {
+        margin-bottom: 6%;
+    }
+
+    #content h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1%;
+    }
+
+    #content h1 {
+        margin: 7% 0px 4% 0px;
+        font-size: 1.6rem;
+    }
+
+    #content ul {
+        margin-bottom: 6%;
+    }
+
+    #content ul li {
+        margin-bottom: 3%;
+    }
+
+    #footer {
+        height: 5rem;
+        border-top: white 2px solid;
+    }
+
+    #footer p {
+        text-align: right;
+        margin: 0px;
+        color: white;
+        padding: 2% 5% 0px 0px;
+    }
+}
